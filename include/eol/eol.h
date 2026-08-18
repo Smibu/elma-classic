@@ -119,6 +119,7 @@ class eol {
     void record_apple_for_apple_battle(int object_index);
 
     const std::vector<kuski>& all_kuskis() const { return kuskis_; }
+    const char* find_nick(unsigned int kuski_id) const;
     std::string_view lookup_nick(unsigned int kuski_id) const;
     void send_chat_line(std::string_view message);
 
